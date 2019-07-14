@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <listeners>
+    <listener class-name="listeners.TestListeners"/>
+  </listeners>
+  <test name="newCustomer(failed)">
+    <classes>
+      <class name="NotPartOfFramework.LoginListenersTests_UsingSuiteFile">
+        <methods>
+          <include name="readConfiguration"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="Login_TC1"/>
+        </methods>
+      </class> <!-- NotPartOfFramework.LoginListenersTests_UsingSuiteFile -->
+    </classes>
+  </test> <!-- newCustomer(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

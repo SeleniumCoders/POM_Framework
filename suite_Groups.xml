@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Suite1" verbose="1"> 
+
+ <test name="newCustomer">
+     <classes> 
+       <class name = "com.customer.NewCustomerTests" />        
+     </classes> 
+ </test> 
+ 
+ <test name="login">
+ 	<groups> 
+         <run> 
+             <include name = "R1" /> 
+             <exclude name = "R2"/>
+             
+            
+        </run> 
+    </groups> 
+ 	
+     <classes> 
+       <class name = "com.loginTests.LoginTests" />              
+     </classes> 
+ </test> 
+
+</suite> 
