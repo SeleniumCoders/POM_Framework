@@ -42,7 +42,7 @@ public class BaseClass {
 		{
 			case "chrome": //System.setProperty("webdriver.chrome.driver","F:\\Selenium\\JarFiles\\chromedriver.exe"); 	
 			capabilities = DesiredCapabilities.chrome();
-	        driver = new RemoteWebDriver(new URL("http://192.168.0.2:4444/wd/hub"), capabilities);
+	        driver = new RemoteWebDriver(new URL("http://192.168.43.28:4444/wd/hub"), capabilities);
 			
 			
 			break;

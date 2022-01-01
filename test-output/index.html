@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite1">
-              <span class="suite-name border-failed">Suite1</span>
+              <span class="suite-name border-skipped">Suite1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite1">
-                    <span>F:\Selenium\Programs\POM_Framework\listeners.xml</span>
+                    <span>F:\Selenium\Programs\POM_Framework\suite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite1">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">4 methods,  4 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
-                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods skipped suite-Suite1"> (hide)</a> <!-- hide-methods skipped suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods skipped suite-Suite1"> (show)</a> <!-- show-methods skipped suite-Suite1 -->
                     </span>
-                    <div class="method-list-content failed suite-Suite1">
+                    <div class="method-list-content skipped suite-Suite1">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="NotPartOfFramework.LoginListenersTests_UsingSuiteFile" hash-for-method="Login_TC1">Login_TC1</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.loginTests.LoginTests" hash-for-method="Login_TC1">Login_TC1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite1 -->
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.loginTests.LoginTests" hash-for-method="Login_TC2">Login_TC2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.loginTests.LoginTests" hash-for-method="Login_TC3">Login_TC3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.customer.NewCustomerTests" hash-for-method="NewCustomerValidation_TC1">NewCustomerValidation_TC1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,10 +132,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite1" class="panel Suite1">
-          <div class="suite-Suite1-class-failed">
+          <div class="suite-Suite1-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">NotPartOfFramework.LoginListenersTests_UsingSuiteFile</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.loginTests.LoginTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -128,30 +143,53 @@
                   <a name="Login_TC1">
                   </a> <!-- Login_TC1 -->
                   <span class="method-name">Login_TC1</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at NotPartOfFramework.LoginListenersTests_UsingSuiteFile.Login_TC1(LoginListenersTests_UsingSuiteFile.java:26)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_TC2">
+                  </a> <!-- Login_TC2 -->
+                  <span class="method-name">Login_TC2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_TC3">
+                  </a> <!-- Login_TC3 -->
+                  <span class="method-name">Login_TC3</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite1-class-failed -->
+          </div> <!-- suite-Suite1-class-skipped -->
+          <div class="suite-Suite1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.customer.NewCustomerTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewCustomerValidation_TC1">
+                  </a> <!-- NewCustomerValidation_TC1 -->
+                  <span class="method-name">NewCustomerValidation_TC1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-skipped -->
         </div> <!-- panel Suite1 -->
         <div panel-name="test-xml-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\Selenium\Programs\POM_Framework\listeners.xml</span>
+            <span class="header-content">F:\Selenium\Programs\POM_Framework\suite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite1&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;listeners.TestListeners&quot;/&gt;
-  &lt;/listeners&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite1&quot; parallel=&quot;methods&quot;&gt;
   &lt;test name=&quot;newCustomer&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;NotPartOfFramework.LoginListenersTests_UsingSuiteFile&quot;/&gt;
+      &lt;class name=&quot;com.customer.NewCustomerTests&quot;/&gt;
+      &lt;class name=&quot;com.loginTests.LoginTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- newCustomer --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
@@ -165,7 +203,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">newCustomer (1 class)</span>
+                <span class="test-name">newCustomer (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -175,6 +213,22 @@
             <span class="header-content">Groups for Suite1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">R1</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Login_TC1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">R2</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Login_TC2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite1" class="panel">
@@ -191,16 +245,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login_TC1')
-data.setCell(0, 2, 'NotPartOfFramework.LoginListenersTests_UsingSuiteFile')
-data.setCell(0, 3, 3269);
+data.setCell(0, 1, 'Login_TC2')
+data.setCell(0, 2, 'com.loginTests.LoginTests')
+data.setCell(0, 3, 4);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'NewCustomerValidation_TC1')
+data.setCell(1, 2, 'com.customer.NewCustomerTests')
+data.setCell(1, 3, 3);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Login_TC1')
+data.setCell(2, 2, 'com.loginTests.LoginTests')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Login_TC3')
+data.setCell(3, 2, 'com.loginTests.LoginTests')
+data.setCell(3, 3, 1);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 9 ms</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -215,9 +281,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.loginTests.LoginTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">readConfiguration</span>
+                <br/>
+                <span class="ignored-method-name">Login_Disabled</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite1" class="panel">
@@ -226,25 +301,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">NotPartOfFramework.LoginListenersTests_UsingSuiteFile</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.customer.NewCustomerTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">readConfiguration</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(org.testng.TestRunner@1698ee84)</span>
-                <span class="method-start">3572 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">Login_TC1</span>
-                <span class="method-start">17999 ms</span>
+                <span class="method-name">beforeMethod(org.testng.TestRunner@de9571c)</span>
+                <span class="method-start">1076 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NewCustomerValidation_TC1</span>
+                <span class="method-start">23581 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">22692 ms</span>
-              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loginTests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Login_TC1</span>
+                <span class="method-start">23598 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Login_TC2</span>
+                <span class="method-start">23636 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Login_TC3</span>
+                <span class="method-start">23648 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
-  <listeners>
-    <listener class-name="listeners.TestListeners"/>
-  </listeners>
-  <test name="newCustomer(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="methods">
+  <test name="newCustomer(failed)" parallel="methods">
     <classes>
-      <class name="NotPartOfFramework.LoginListenersTests_UsingSuiteFile">
+      <class name="com.loginTests.LoginTests">
         <methods>
-          <include name="readConfiguration"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
+          <include name="Login_TC3"/>
+          <include name="Login_TC2"/>
           <include name="Login_TC1"/>
         </methods>
-      </class> <!-- NotPartOfFramework.LoginListenersTests_UsingSuiteFile -->
+      </class> <!-- com.loginTests.LoginTests -->
+      <class name="com.customer.NewCustomerTests">
+        <methods>
+          <include name="NewCustomerValidation_TC1"/>
+          <include name="readConfiguration"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.customer.NewCustomerTests -->
     </classes>
   </test> <!-- newCustomer(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

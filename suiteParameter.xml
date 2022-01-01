@@ -9,7 +9,7 @@
  
  <test name="newCustomer">
      <classes> 
-       <class name = "com.dataProvider.LoginParameter" />     
+       <class name = "NotPartOfFramework.LoginParameter" />     
      </classes> 
  </test> 
 </suite> 
